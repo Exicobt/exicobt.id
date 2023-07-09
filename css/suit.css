@@ -1,0 +1,204 @@
+* {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(42, 42, 42);
+  color: #fff;
+  font-family: "Cantora One", sans-serif;
+}
+
+/* navbar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.221);
+  border-bottom: 1px solid #fff;
+  justify-content: space-between;
+  display: flex;
+  padding: 0.5rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-size: 2rem;
+  align-items: center;
+  display: flex;
+  padding: 2rem;
+  font-family: "Belanosima", sans-serif;
+  font-style: italic;
+}
+
+/* section */
+.section {
+  margin-top: 7.2rem;
+  display: block;
+  padding: 2rem;
+  background-color: rgb(48, 48, 48);
+  align-items: center;
+  right: 0;
+  left: 0;
+}
+
+.section .game {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.section .pilihan {
+  background-color: #f5460c;
+  position: relative;
+  display: block;
+  margin: 1.4rem;
+  width: 10rem;
+  height: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.section .pilihan:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #ae2f05;
+  z-index: 1;
+}
+
+.section .pilihanBot {
+  background-color: #f5460c;
+  position: absolute;
+  width: 10rem;
+  height: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  right: 2rem;
+  top: calc(50% - 1.5rem);
+  margin-top: 0;
+  margin-right: 0;
+  z-index: 1;
+}
+
+.section .you {
+  font-size: 3rem;
+}
+
+.section .bot {
+  position: absolute;
+  font-size: 3rem;
+  top: 13.4rem;
+  margin-left: 68rem;
+}
+
+.section .game .vs h1 {
+  justify-content: center;
+  display: flex;
+  transform: translateY(-9rem);
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 4px #000, -2px -2px 4px #000;
+}
+
+.section .game span {
+  color: #ff0000;
+}
+
+.section .vs #result {
+  content: "";
+  background-color: #000000;
+  position: absolute;
+  display: flex;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  width: 10rem;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  right: 37.6rem;
+  top: 10rem;
+}
+
+#skorPlayer {
+  content: "";
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  top: 0;
+}
+
+
+
+/* Media Query */
+/* Mobile */
+@media (max-width: 450px) {
+    html {
+        font-size: 30%;
+    }
+
+    .section {
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game {
+        height: 80vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 50rem;
+        width: 10rem;
+        height: 10rem;       
+    }
+
+    .bot {
+        position: absolute;
+        text-align: center;
+        right: 14rem;
+        transform: translateY(-60px);
+    }
+
+    .pilihanBot {
+        position: absolute;
+        display: flex;
+        right: 0rem;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(22px);
+    }
+
+    .section .left {
+        position: absolute;
+        display: flex;
+        flex-direction: row ;
+        justify-content: center;
+        bottom: 55rem;
+    }
+
+    .vs h1 {
+        top: 90rem;
+        position: absolute;
+        font-size: 10rem;
+    }
+
+    #skorPlayer,
+    #result {
+        transform: translateY(40px);
+    }
+}
