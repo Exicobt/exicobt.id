@@ -13,7 +13,7 @@ body {
 
 /* navbar */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.221);
+  background-color: rgb(0, 0, 0);
   border-bottom: 1px solid #fff;
   justify-content: space-between;
   display: flex;
@@ -47,6 +47,7 @@ body {
 }
 
 .section .game {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -74,7 +75,6 @@ body {
 
 .section .pilihanBot {
   background-color: #f5460c;
-  position: absolute;
   width: 10rem;
   height: 3rem;
   text-align: center;
@@ -137,68 +137,65 @@ body {
   top: 0;
 }
 
-
-
 /* Media Query */
 /* Mobile */
 @media (max-width: 450px) {
-    html {
-        font-size: 30%;
-    }
+  body {
+    font-family: "Cantora One", sans-serif;
+  }
 
-    .section {
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-    }
+  .navbar {
+    background-color: #000000;
+  }
 
-    .game {
-        height: 80vh;
-        align-items: center;
-        justify-content: center;
-    }
+  .navbar .logo {
+    font-size: 80%;
+  }
 
-    .right {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        top: 50rem;
-        width: 10rem;
-        height: 10rem;       
-    }
+  .section {
+    margin-top: 6rem;
+    height: 100vh;
+  }
 
-    .bot {
-        position: absolute;
-        text-align: center;
-        right: 14rem;
-        transform: translateY(-60px);
-    }
+  #skorPlayer {
+    font-size: 3rem;
+    margin-left: -2rem;
 
-    .pilihanBot {
-        position: absolute;
-        display: flex;
-        right: 0rem;
-        justify-content: center;
-        align-items: center;
-        transform: translateX(22px);
-    }
+  }
 
-    .section .left {
-        position: absolute;
-        display: flex;
-        flex-direction: row ;
-        justify-content: center;
-        bottom: 55rem;
-    }
+  #result{
+  position: absolute;
+  left:2rem;
+  transform: translateY(-13.4rem);
 
-    .vs h1 {
-        top: 90rem;
-        position: absolute;
-        font-size: 10rem;
-    }
+  }
 
-    #skorPlayer,
-    #result {
-        transform: translateY(40px);
-    }
+  .left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10rem;
+    padding: 0.8rem;
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-18rem);
+    
+  }
+
+  .pilihanBot {
+    background-color: #000000;
+  }
+
+  .you, .bot {
+    display: none;
+  }
+
+  .vs h1 {
+  margin-top:-2rem;
+  }
+  
+ 
 }
