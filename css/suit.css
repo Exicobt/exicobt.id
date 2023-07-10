@@ -163,10 +163,10 @@ body {
   .score {
     margin: 0;
     width: 15rem;
-    text-align: end;
+    height: 80%;
+    align-items: center;
     font-size: 2rem;
     display: flex;
-    transform: translateY(14rem);
   }
 
 
@@ -219,12 +219,12 @@ body {
 
   .bot {
     transform: translateX(0);
-    transform: translateY(-100px);
+    transform: translateY(-140px);
   }
 
   #result {
     width: 50%;
-    height: 10%;
+    height: 45px;
     font-size:1.5rem;
     text-align: center;
     line-height: 45px;
@@ -232,8 +232,9 @@ body {
   }
  
   #pilPlay {
-    font-size: 50%;
+    font-size: 80%;
     width: 100%;
+    margin-bottom: 70px;
   }
 }
 
